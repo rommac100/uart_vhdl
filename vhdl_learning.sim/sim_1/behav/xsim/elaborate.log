@@ -1,0 +1,15 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/rommac/vivado/vitis/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 0d91fe4178b64775bcd90cbaabebee31 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot testing_testbench_behav xil_defaultlib.testing_testbench -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture arch of entity xil_defaultlib.uart_trans [uart_trans_default]
+Compiling architecture arch of entity xil_defaultlib.testing_testbench
+Built simulation snapshot testing_testbench_behav

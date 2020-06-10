@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4079021905204922805  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 0d91fe4178b64775bcd90cbaabebee31 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot ADDSIM_behav xil_defaultlib.ADDSIM" , 
+    buildDate : "Nov  6 2019" , 
+    buildTime : "21:42:20" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/ADDSIM_behav/xsimk\"   \"xsim.dir/ADDSIM_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/ADDSIM_behav/obj/xsim_1.lnx64.o\" -L\"/home/rommac/vivado/vitis/Vivado/2019.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
