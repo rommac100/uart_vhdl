@@ -47,22 +47,28 @@
 #define alloca _alloca
 #endif
 typedef void (*funcp)(char *, char *);
-extern void execute_13(char*, char *);
-extern void execute_14(char*, char *);
-extern void execute_10(char*, char *);
+extern void execute_20(char*, char *);
+extern void execute_21(char*, char *);
 extern void execute_11(char*, char *);
 extern void execute_12(char*, char *);
+extern void execute_13(char*, char *);
+extern void execute_15(char*, char *);
+extern void execute_16(char*, char *);
+extern void execute_17(char*, char *);
+extern void execute_18(char*, char *);
+extern void transaction_0(char*, char*, unsigned, unsigned, unsigned);
 extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-extern void transaction_3(char*, char*, unsigned, unsigned, unsigned);
-extern void transaction_11(char*, char*, unsigned, unsigned, unsigned);
-funcp funcTab[8] = {(funcp)execute_13, (funcp)execute_14, (funcp)execute_10, (funcp)execute_11, (funcp)execute_12, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_3, (funcp)transaction_11};
-const int NumRelocateId= 8;
+extern void transaction_2(char*, char*, unsigned, unsigned, unsigned);
+extern void transaction_14(char*, char*, unsigned, unsigned, unsigned);
+extern void transaction_18(char*, char*, unsigned, unsigned, unsigned);
+funcp funcTab[14] = {(funcp)execute_20, (funcp)execute_21, (funcp)execute_11, (funcp)execute_12, (funcp)execute_13, (funcp)execute_15, (funcp)execute_16, (funcp)execute_17, (funcp)execute_18, (funcp)transaction_0, (funcp)vhdl_transfunc_eventcallback, (funcp)transaction_2, (funcp)transaction_14, (funcp)transaction_18};
+const int NumRelocateId= 14;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/testing_testbench_behav/xsim.reloc",  (void **)funcTab, 8);
-	iki_vhdl_file_variable_register(dp + 4392);
-	iki_vhdl_file_variable_register(dp + 4448);
+	iki_relocate(dp, "xsim.dir/testing_testbench_behav/xsim.reloc",  (void **)funcTab, 14);
+	iki_vhdl_file_variable_register(dp + 6720);
+	iki_vhdl_file_variable_register(dp + 6776);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */

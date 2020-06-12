@@ -5,6 +5,7 @@ vhdl xil_defaultlib  \
 "../../../../vhdl_learning.srcs/sources_1/new/test_interface.vhd" \
 "../../../../vhdl_learning.srcs/sources_1/new/testing_vhdl.vhd" \
 "../../../../vhdl_learning.srcs/sources_1/new/uart_trans.vhd" \
+"../../../../vhdl_learning.srcs/sources_1/new/uart_rec.vhd" \
 "../../../../vhdl_learning.srcs/sim_1/new/testing_testbench.vhdl" \
 "../../../../vhdl_learning.srcs/sim_1/new/ADDSIM.vhd" \
 

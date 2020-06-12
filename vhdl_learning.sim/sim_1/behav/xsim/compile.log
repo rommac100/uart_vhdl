@@ -1,4 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/rommac/vivado/projects/vhdl_learning/vhdl_learning.srcs/sources_1/new/uart_trans.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'uart_trans'
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/rommac/vivado/projects/vhdl_learning/vhdl_learning.srcs/sim_1/new/testing_testbench.vhdl" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'testing_testbench'

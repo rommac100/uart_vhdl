@@ -7,7 +7,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity uart_trans is
 	port (
-		i_rx : in std_logic; 
 		o_tx : out std_logic;
 		o_curr_state : out std_logic_vector (1 downto 0);
 		o_clk_bit_cnt : out integer range 0 to 15;
@@ -34,6 +33,7 @@ begin
 	begin
 		if rising_edge (rst_clk_cnt) or clk_bit_cnt=15 then
 			clk_bit_cnt <= 0;
+			rst_clk_cnt <= '0';
 		elsif rising_edge (i_clk) then
 			clk_bit_cnt <= clk_bit_cnt + 1;
 		end if;
@@ -54,7 +54,6 @@ begin
 				end if;
 			when "01" =>
 				o_tx <= '0';
-				rst_clk_cnt <= '0';
 				if clk_bit_cnt=15 then
 					curr_state <= "10";
 					bit_index <= 0; 
@@ -67,16 +66,21 @@ begin
 				if clk_bit_cnt=15 then
 					if bit_index=7 then
 						curr_state <= "11";
+					else
+						bit_index <= bit_index+1;
 					end if;
 					rst_clk_cnt <= '1';
-					bit_index <= bit_index+1;
 				else
 					o_tx <= i_byte(bit_index);
 				end if;
 			when "11" =>
+				if (clk_bit_cnt=15) then
+					bit_index <= 0;
+					curr_state <= "00";
 				o_tx <= '1';
-				bit_index <= 0;
-				curr_state <= "00";
+				end if;
+			when others =>
+				o_tx <= '1';
 		end case;
 	end process;
 end arch;
